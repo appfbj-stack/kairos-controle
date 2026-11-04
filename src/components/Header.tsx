@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { PWAInstallButton } from './PWAInstallButton';
 import { useOnlineStatus } from '../hooks/useOnlineStatus';
+import { ENV } from '../config/env';
 
 interface HeaderProps {
   onOpenNewItem: () => void;
@@ -56,7 +57,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="font-extrabold text-base sm:text-lg tracking-tight text-white flex items-center gap-1.5">
-                  Almoxarifado Obra
+                  {ENV.appName}
                   <span className="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
                     PWA
                   </span>

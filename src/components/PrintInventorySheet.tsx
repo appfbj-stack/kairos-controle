@@ -1,6 +1,7 @@
 import React from 'react';
 import { StockItem } from '../types/inventory';
 import { CATEGORIES } from '../utils/categories';
+import { ENV } from '../config/env';
 
 interface PrintInventorySheetProps {
   items: StockItem[];
@@ -13,10 +14,10 @@ export const PrintInventorySheet: React.FC<PrintInventorySheetProps> = ({ items 
       <div className="border-b-2 border-black pb-4 mb-4 flex justify-between items-start">
         <div>
           <h1 className="text-xl font-bold uppercase tracking-wider">
-            Folha de Conferência Física de Estoque - Almoxarifado Obra
+            Folha de Conferência Física - {ENV.appName}
           </h1>
           <p className="text-xs text-gray-700 mt-1">
-            Engenharia Elétrica • Mecânica • Soldagem & Caldeiraria • Hidráulica
+            {ENV.obraName} • Elétrica • Mecânica • Soldagem • Hidráulica
           </p>
         </div>
         <div className="text-right text-xs">
