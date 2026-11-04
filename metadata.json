@@ -1,0 +1,6 @@
+{
+  "name": "Almoxarifado Obra - Estoque PWA",
+  "description": "Aplicativo PWA com IndexedDB para controle de estoque de obra de engenharia elétrica, mecânica, solda e hidráulica/encanamento, com funcionamento 100% offline.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
