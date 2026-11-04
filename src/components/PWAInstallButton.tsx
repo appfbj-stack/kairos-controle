@@ -52,12 +52,14 @@ export const PWAInstallButton: React.FC = () => {
             </button>
 
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400">
-                <Smartphone className="w-5 h-5" />
-              </div>
+              <img
+                src="/apple-touch-icon.png"
+                alt="Ícone do Aplicativo"
+                className="w-12 h-12 rounded-xl border border-amber-400/40 shadow-md object-cover bg-slate-950"
+              />
               <div>
                 <h3 className="font-bold text-base text-white">Instalar no iOS (Safari)</h3>
-                <p className="text-xs text-slate-400">Use o app offline na obra</p>
+                <p className="text-xs text-slate-400">Ícone fixado na tela de início</p>
               </div>
             </div>
 

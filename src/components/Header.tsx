@@ -45,9 +45,11 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Brand Logo & Name */}
           <div className="flex items-center gap-2.5 sm:gap-3">
             <div className="relative">
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center shadow-lg shadow-amber-500/20 border border-amber-400/30">
-                <HardHat className="w-6 h-6 text-slate-950 stroke-[2.2]" />
-              </div>
+              <img
+                src="/pwa-192x192.png"
+                alt="Ícone do Almoxarifado"
+                className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl shadow-lg shadow-amber-500/10 border border-amber-400/30 object-cover bg-slate-900"
+              />
               <span className="absolute -bottom-1 -right-1 flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
